@@ -1,0 +1,166 @@
+.luminosa-section {
+  background-color: #ffffff;
+  padding: 100px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.paragragh {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.subtitle {
+  color: #b8621b;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #2d2d2d;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 30px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  position: relative;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-title {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Fallback background colors if images don't load */
+.value-card:nth-child(1) {
+  background: linear-gradient(135deg, #a0522d, #8b4513);
+}
+
+.value-card:nth-child(2) {
+  background: linear-gradient(135deg, #a0522d, #8b4513);
+}
+
+.value-card:nth-child(3) {
+  background: linear-gradient(135deg, #722f37, #5d1a1d);
+}
+
+.value-card:nth-child(4) {
+  background: linear-gradient(135deg, #4a2c2a, #2f1b1d);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .luminosa-section {
+    padding: 80px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    height: 240px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .value-card {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .value-card {
+    transition: none;
+  }
+}

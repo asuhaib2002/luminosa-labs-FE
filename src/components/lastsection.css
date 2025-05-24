@@ -1,0 +1,16 @@
+.contact-section {
+  padding: 100px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-button-container {
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+}
