@@ -63,7 +63,7 @@
   padding: 50px 30px 45px 30px; /* Increased padding */
   text-align: center;
   min-height: 420px;
-  display: flex;
+  display: flex; 
   flex-direction: column;
   align-items: center;
   opacity: 0.8;
