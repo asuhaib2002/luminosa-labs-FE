@@ -1,26 +1,28 @@
+// src/components/Header.jsx
 
-import { useState } from "react"
-import "./Header.css"
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
-const Header = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+const Header = ({ logoText = "LUMINOSA" }) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen)
-  }
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
-           <img src="public/images/lum.svg" alt="" className="logo-img" />
-           <span className="logo-text">LUMINOSA</span>
-          </div>
+        <Link to="/" className="logo">
+       <img src="public/images/lum.svg" alt="Logo" className="logo-img" />
+       <span className="logo-text">{logoText}</span>
+       </Link>
 
         <nav className={`nav-desktop ${mobileMenuOpen ? "hidden" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="#work" className="nav-link">
+              <Link to="/work" className="nav-link">
                 WORK
                 <svg
                   className="dropdown-arrow"
@@ -37,13 +39,14 @@ const Header = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a href="#services" className="nav-link">SERVICES</a>
+            <li className="nav-link">
+            <Link to="/services" onClick={toggleMobileMenu}>SERVICES</Link>
+
             </li>
-            <li className="nav-item">
-              <a href="#about" className="nav-link">ABOUT</a>
+            <li className="nav-link">
+              <Link to="/about" onClick={toggleMobileMenu}>ABOUT</Link>
             </li>
             <li className="nav-item">
               <a href="#contact" className="contact-btn">CONTACT US</a>
@@ -57,9 +60,15 @@ const Header = () => {
 
         <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
           <ul className="mobile-nav-list">
-            <li className="mobile-nav-item"><a href="#work" onClick={toggleMobileMenu}>WORK</a></li>
-            <li className="mobile-nav-item"><a href="#services" onClick={toggleMobileMenu}>SERVICES</a></li>
-            <li className="mobile-nav-item"><a href="#about" onClick={toggleMobileMenu}>ABOUT</a></li>
+            <li className="mobile-nav-item">
+              <Link to="/work" onClick={toggleMobileMenu}>WORK</Link>
+            </li>
+            <li className="mobile-nav-item">
+              <Link to="/services" onClick={toggleMobileMenu}>SERVICES</Link>
+            </li>
+            <li className="mobile-nav-item">
+              <Link to="/about" onClick={toggleMobileMenu}>About</Link>
+            </li>
             <li className="mobile-nav-item">
               <a href="#contact" className="contact-btn" onClick={toggleMobileMenu}>CONTACT US</a>
             </li>
@@ -67,7 +76,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

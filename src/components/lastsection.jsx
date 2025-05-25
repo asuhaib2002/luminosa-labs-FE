@@ -1,23 +1,30 @@
-import "./lastSection.css"
+// src/components/LastSection.jsx
+import React from "react"
+import "./LastSection.css"
 
-const lastSection = () => {
+const LastSection = ({
+  subtitle = "GET STARTED WITH US",
+  title = "Let's Build Something\nExtraordinary Together",
+  description = "Your vision deserves more than just execution—it needs innovation, strategy, and a touch of brilliance. Whether you're launching a new product, revamping your platform, or integrating AI, we're here to turn your ideas into reality.",
+  buttonText = "Contact Us",
+  buttonLink = "#contact",
+}) => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <p className="section-subtitle">GET STARTED WITH US</p>
+        <p className="section-subtitle">{subtitle}</p>
         <h2 className="section-title">
-          Let's Build Something
-          <br />
-          Extraordinary Together
+          {title.split("\n").map((line, idx) => (
+            <React.Fragment key={idx}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
         </h2>
-        <p className="section-description">
-          Your vision deserves more than just execution—it needs innovation, strategy, and a touch of brilliance.
-          Whether you're launching a new product, revamping your platform, or integrating AI, we're here to turn your
-          ideas into reality.
-        </p>
+        <p className="section-description">{description}</p>
         <div className="contact-button-container">
-          <a href="#contact" className="btn btn-outline">
-            Contact Us
+          <a href={buttonLink} className="btn btn-outline">
+            {buttonText}
           </a>
         </div>
       </div>
@@ -25,4 +32,4 @@ const lastSection = () => {
   )
 }
 
-export default lastSection
+export default LastSection
