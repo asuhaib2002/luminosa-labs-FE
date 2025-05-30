@@ -14,11 +14,13 @@ import Contact from "./pages/contact";
 import CaseStudy1 from "./pages/casestudy1";
 import CaseStudy2 from "./pages/casestudy2";
 import CaseStudy3 from "./pages/casestudy3";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="app">
         <Header logoText="LUMINOSA" />
         <Routes>
