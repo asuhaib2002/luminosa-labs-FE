@@ -1,4 +1,3 @@
-"use client"
 
 import { useEffect, useRef } from "react"
 import "./section2.css"
@@ -70,7 +69,7 @@ const Section2 = () => {
               ref={(el) => setCardRef(el, i)}
             >
               <img src={`/images/${img}`} alt="" className="card-background" />
-              <h3 className="card-title">
+              <h3 className="card-title2">
                 {line1}
                 <br />
                 {line2}

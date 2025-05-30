@@ -1,11 +1,16 @@
 .contact-sections {
   padding: 100px 0;
-  background-color: #fff;
+  background-color: rgba(240, 243, 249, 1);
   text-align: center;
+  margin-bottom: -40PX;
 }
 
 .contact-button-container {
   margin-top: 40px;
+  
+}
+.section-subtitle{
+  color:rgb(163, 72, 11);
 }
 
 /* Responsive */

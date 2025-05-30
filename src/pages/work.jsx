@@ -68,7 +68,7 @@ const Work = () => {
                   ))}
                 </p>
                 <div className="slide-buttons">
-                  <button className="btn btn-primary">Schedule a Call</button>
+                  <button className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Schedule a Call</button>
                 </div>
               </div>
             </div>
@@ -78,20 +78,20 @@ const Work = () => {
 
       
       <section className="case-studies-section" style={{ padding: "4rem 2rem" }}>
-        <h2 className="text-center text-lg font-bold uppercase text-red-800 mb-2">
+        <h1 className="text-center text-lg font-bold uppercase " style={{  fontSize: '14px',color: "rgba(133, 34, 0, 1)" }}>
           Our Case Studies
-        </h2>
-        <h3 className="text-center text-3xl font-semibold mb-10">
+        </h1>
+        <h3 className="text-center text-lg font-normal uppercase " style={{ fontFamily: "Work Sans", fontSize: '24px',color: "rgb(0, 0, 0)" }}>
           Our Work Speaks for Itself
         </h3>
 
-        <div className="case-studies-grid" style={{ display: "grid", gap: "2rem", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+        <div className="case-studies-grid" style={{ margin: "80PX", display: "grid", gap: "2rem", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
           {caseStudies.map((study, index) => (
             <div className="case-card" key={index} style={{ borderRadius: "20px", overflow: "hidden", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "1rem" }}>
               <img src={study.image} alt={study.title} style={{ width: "100%", borderRadius: "16px" }} />
               <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
                 {study.tags.map((tag, i) => (
-                  <span key={i} style={{ backgroundColor: "#6b3d2e", color: "#fff", padding: "4px 10px", borderRadius: "12px", fontSize: "12px" }}>
+                  <span key={i} style={{ backgroundColor: "rgb(163, 72, 11)", color: "#fff", padding: "4px 10px", borderRadius: "12px", fontSize: "12px" }}>
                     {tag}
                   </span>
                 ))}

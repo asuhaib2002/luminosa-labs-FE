@@ -57,7 +57,7 @@ const About = () => {
     <>
       <Header logoText="LUMINOSA" />
 
-      {/* Slide Section */}
+
       <section className="hero-carousel">
         <div className="carousel-container" style={{ transform: "translateX(0%)" }}>
           <div className="carousel-slide">
@@ -71,10 +71,11 @@ const About = () => {
             </div>
             <div className="slide-content-wrapper">
               <div className="slide-content">
+                <p className="font-ag">About Us</p>
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
                 <div className="slide-buttons">
-                  <button className="btn btn-primary">Get Started</button>
+                  <button className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Get Started</button>
                   
                 </div>
               </div>

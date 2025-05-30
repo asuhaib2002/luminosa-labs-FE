@@ -54,7 +54,7 @@ const CaseStudy2 = () => {
                <p className="font-ag">Case Study</p>
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
-                <p className="date">5 min Read • October 10, 2024</p>
+                <p className="date" style={{ fontStyle:"italic"}}>5 min Read • October 10, 2024</p>
               </div>
             </div>
           </div>

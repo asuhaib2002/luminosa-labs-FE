@@ -13,6 +13,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import CaseStudy1 from "./pages/casestudy1";
 import CaseStudy2 from "./pages/casestudy2";
+import CaseStudy3 from "./pages/casestudy3";
 
 
 function App() {
@@ -39,10 +40,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/casestudy1" element={<CaseStudy1 />} />
           <Route path="/casestudy2" element={<CaseStudy2 />} />
-          <Route path="/casestudy3" element={<div>Case Study 3</div>} />
+          <Route path="/casestudy3" element={<CaseStudy3 />} />
           
-          
-        
         </Routes>
         <Footer />
       </div>

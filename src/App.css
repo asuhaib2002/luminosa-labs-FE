@@ -34,46 +34,15 @@ main {
 }
 
 /* Buttons */
-.btn {
-  display: inline-block;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.btn-primary {
-  background-color: #fff;
-  color: #000;
-}
-
-.btn-primary:hover {
-  background-color: #f0f0f0;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-.btn-secondary:hover {
-  background-color: #fff;
-  color: #000;
-}
 
 .btn-outline {
   background-color: transparent;
-  color: #ea580c;
-  border: 2px solid #ea580c;
+  color: rgb(163, 72, 11);
+  border: 2px solid rgb(163, 72, 11);
 }
 
 .btn-outline:hover {
-  background-color: #ea580c;
+  background-color:rgb(163, 72, 11);
   color: #fff;
 }
 
@@ -86,7 +55,7 @@ main {
 .section-subtitle {
   font-size: 14px;
   font-weight: 600;
-  color: #ea580c;
+  color: rgb(163, 72, 11);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 16px;
