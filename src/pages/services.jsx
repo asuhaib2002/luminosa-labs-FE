@@ -8,7 +8,7 @@ import LastSection from "../components/lastsection"
 
 const Services = () => {
   const slide = {
-    image: "public/images/servicebg.png",
+    image: "/images/servicebg.png",
     title: "Where Innovation Meets Impact",
     description:
       "Scalable solutions. Intelligent design. Future-ready technology. At Luminosa Labs, we go beyond software—we create transformative digital experiences that power businesses forward. From AI-driven automation to full-scale platform development, we bring logic, creativity, and strategy together to help you shine in a competitive market.",
@@ -79,7 +79,7 @@ const Services = () => {
       <ServiceCard
         image="/images/laptop.svg"
         title="Software Re-Engineering"
-        description="Transform your legacy systems with modern, logical solutions that boost efficiency, enhance performance, and reduce technical debt. Our approach ensures seamless scalability while keeping your business  ahead of the curve."
+        description="Transform your legacy systems with modern, logical solutions that boost efficiency, enhance performance,and reduce technical debt. Our approach ensures seamless scalability while keeping your business ahead of the curve."
         benefits={[
           "Reduced maintenance costs",
           "Improved performance and security",
@@ -104,7 +104,7 @@ const Services = () => {
       <ServiceCard
         image="/images/brain2.svg"
         title="AI & CHATBOTS"
-        description="Revolutionize customer interactions with intelligent AI-powered solutions. Our bots go beyond automation — they provide real-time support, smart responses, and a human touch that enhances engagement and  user experience."
+        description="Revolutionize customer interactions with intelligent AI-powered solutions. Our bots go beyond automation— they provide real-time support, smart responses, and a human touch that enhances engagement and user experience."
         benefits={[
           "Increased efficiency and reduced manual effort",
           "Scalable solutions that evolve with your business",
@@ -129,7 +129,7 @@ const Services = () => {
       <ServiceCard
          image="/images/pen2.svg"
          title="Design & Branding"
-         description="We craft digital experiences with intention. From intuitive UX/UI design to strategic branding, we create  visuals that connect, engage, and leave a lasting impression—ensuring your brand stands out in a  competitive market."
+         description="We craft digital experiences with intention. From intuitive UX/UI design to strategic branding, we create visuals that connect, engage, and leave a lasting impression—ensuring your brand stands out in a competitive market."
          benefits={[
           "Stronger brand recognition",
           "Higher engagement and conversion rates",

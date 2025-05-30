@@ -22,40 +22,25 @@ const Header = ({ logoText = "LUMINOSA" }) => {
         <nav className={`nav-desktop ${mobileMenuOpen ? "hidden" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/work" className="nav-link">
-                WORK
-                <svg
-                  className="dropdown-arrow"
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                >
-                  <path
-                    d="M1 1.5L6 6.5L11 1.5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
+              <Link to="/work" className="nav-link"> WORK </Link>
             </li>
+
             <li className="nav-link">
             <Link to="/services" onClick={toggleMobileMenu}>SERVICES</Link>
-
             </li>
+
             <li className="nav-link">
               <Link to="/about" onClick={toggleMobileMenu}>ABOUT</Link>
             </li>
+            
             <li className="nav-item">
-              <a href="#contact" className="contact-btn">CONTACT US</a>
+              <Link to="/contact" className="contact-btn" onClick={toggleMobileMenu}>CONTACT US</Link>
             </li>
           </ul>
         </nav>
 
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-          <span className={`hamburger ${mobileMenuOpen ? "open" : ""}`}></span>
+         <span className={`hamburger ${mobileMenuOpen ? "open" : ""}`}></span>
         </button>
 
         <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
@@ -70,7 +55,7 @@ const Header = ({ logoText = "LUMINOSA" }) => {
               <Link to="/about" onClick={toggleMobileMenu}>About</Link>
             </li>
             <li className="mobile-nav-item">
-              <a href="#contact" className="contact-btn" onClick={toggleMobileMenu}>CONTACT US</a>
+             <Link to="/contact" className="contact-btn" onClick={toggleMobileMenu}>CONTACT US</Link>
             </li>
           </ul>
         </div>

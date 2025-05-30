@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Work from "./pages/Work";
 import Services from "./pages/services";
 import About from "./pages/about";
+import Contact from "./pages/contact";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           
           
         

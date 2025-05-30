@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import "./ContactPage.css"
-
+import "./Contact.css"
+import Header from "../components/Header"
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,28 +27,7 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
-      {/* Header */}
-      <header className="header">
-        <div className="logo">
-          <span className="logo-icon">⚡</span>
-          <span className="logo-text">LUMINOSA</span>
-        </div>
-        <nav className="navigation">
-          <a href="#work" className="nav-link">
-            WORK
-          </a>
-          <a href="#services" className="nav-link">
-            SERVICES
-          </a>
-          <a href="#about" className="nav-link">
-            ABOUT
-          </a>
-          <a href="#contact" className="nav-link active">
-            CONTACT US
-          </a>
-        </nav>
-      </header>
-
+      <Header />
       {/* Main Content */}
       <main className="main-content">
         <div className="contact-container">
@@ -137,28 +116,6 @@ const ContactPage = () => {
           </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-            <span className="logo-icon">⚡</span>
-            <span className="logo-text">LUMINOSA</span>
-          </div>
-          <div className="footer-contact">
-            <p className="footer-label">CONTACT US</p>
-            <p className="footer-address">
-              275 North Something,
-              <br />
-              Walnut Creek, CA 94598
-            </p>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>© 2025 Luminosa Labs. All Rights Reserved. Privacy Policy Terms of Use</p>
-          <div className="social-link">in</div>
-        </div>
-      </footer>
     </div>
   )
 }

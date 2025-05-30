@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
 .service-card-container {
   background-color: rgba(133, 34, 0, 1);
-  padding: 0px 120px ;
+  font-family: 'Work Sans', sans-serif;
+  padding: 0px 120px;
   color: white;
   position: relative;
   overflow: hidden;
@@ -14,9 +17,10 @@
 }
 
 .service-t {
-    margin-top: 60px;
+  margin-top: 60px;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   color: white;
@@ -32,7 +36,9 @@
 .service-lists {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .service-benefits, .service-audience {
@@ -45,7 +51,6 @@
   margin-bottom: 10px;
 }
 
-
 .service-white-section {
   position: relative;
   margin-top: 30px;
@@ -56,24 +61,24 @@
   width: 100%;
   height: auto;
   display: block;
-  
 }
 
 .white-content-overlay {
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: -40px;
   padding: 120px;
   width: 100%;
   height: 100%;
   color: rgba(133, 34, 0, 1);
   z-index: 2;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .white-content-overlay h4 {
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 1px;
 }
 
 .white-content-overlay ul {
@@ -84,4 +89,85 @@
 .white-content-overlay li {
   margin-bottom: 10px;
   font-weight: 500;
+}
+
+/* --------------------
+   Responsive Styles
+-------------------- */
+
+@media (max-width: 1024px) {
+  .service-card-container {
+    padding: 0 60px;
+  }
+
+  .white-content-overlay {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card-container {
+    padding: 0 30px;
+  }
+
+  .service-lists {
+    flex-direction: column;
+  }
+
+  .service-benefits,
+  .service-audience {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+  .white-content-overlay {
+   position: absolute;
+    padding: 40px;
+    margin-left: 80px;
+    overflow: visible;;
+  }
+  
+  .white-bg-image{
+    height: 240px;
+    width: 520px;
+    border-top-right-radius: 150px;
+  
+  }
+
+  .service-t {
+    font-size: 16px;
+  }
+
+  .service-d {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card-container {
+    padding: 0 16px;
+  }
+
+  .white-content-overlay {
+    padding: 40px 16px;
+  }
+
+  .service-t {
+    font-size: 14px;
+  }
+
+  .service-d {
+    font-size: 13px;
+  }
+
+  .white-content-overlay h4,
+  .service-benefits h4,
+  .service-audience h4 {
+    font-size: 16px;
+  }
+
+  .white-content-overlay li {
+    font-size: 14px;
+  }
+}
 }
