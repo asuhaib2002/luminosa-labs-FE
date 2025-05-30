@@ -7,19 +7,19 @@ import './CaseStudy.css';
 
 const CaseStudy2 = () => {
   const slide = {
-    image: "/images/bg2.png",
-    title: "From Bottlenecks to Breakthroughs",
+    image: "/images/bg3.png",
+    title: "From Startup Struggles to Scalable Success",
     description:
-      "We helped Styles overcome serious technical hurdles, re-engineering their platform into a fast, scalable SaaS solution that fueled 45% year-over-year growth. ",
+      "We re-engineered a confidential UAE-based product, building a solid backend foundation that fueled growth to 150K customers and record-breaking sales. ",
   }
    const caseStudies = [
     {
-      title: "From Startup Struggles to Scalable Success",
+      title: "From Bottlenecks to Breakthroughs",
       description:
-        "We re-engineered a confidential UAE-based product, building a solid backend foundation that fueled growth to 150K customers and record-breaking sales.",
+        "We helped StyIz overcome serious technical hurdles, re-engineering their platform into a fast, scalable SaaS solution that fueled 45% year-over-year growth.",
       tags: ["Product Development", "Re-Engineering"],
-      image: "/images/case2.png",
-      link: "/casestudy2",
+      image: "/images/case1.png",
+      link: "/casestudy1",
     },
     {
       title: "Redefining Safe and Empowering Rides for Women",
@@ -54,7 +54,7 @@ const CaseStudy2 = () => {
                <p className="font-ag">Case Study</p>
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
-                <p className="date">5 min Read • July 12, 2024</p>
+                <p className="date">5 min Read • October 10, 2024</p>
               </div>
             </div>
           </div>
@@ -64,16 +64,14 @@ const CaseStudy2 = () => {
         <div className="case-study-container">
       <div className="header-section">
         <div className="left-content">
-          <p className="seamless-text">SEAMLESS EXPERIENCES</p>
-          <h1 className="main-title">Re-engineering a broken SaaS backend into a high-performing platform</h1>
+          <p className="seamless-text">Built to Scale</p>
+          <h1 className="main-title">Turning technical chaos into scalable clarity.</h1>
         </div>
         <div className="right-content">
           <h3 className="overview-title">OVERVIEW</h3>
           <p className="overview-text">
-            Stylz is a Software-as-a-Service (SaaS) platform designed for a client in Saudi Arabia. The platform serves
-            as a digital ecosystem for businesses in the beauty and wellness industry, providing booking, management,
-            and customer engagement features. However, despite its potential, the existing system suffered from serious
-            technical bottlenecks, making it difficult to scale and innovate.
+            The product in focus is a confidential yet well-known service provider in the UAE, offering its solutions in more than 20 cities worldwide. Despite its growing market demand and potential, the technical foundation of the product was weak, hampering its ability to scale efficiently.
+
           </p>
         </div>
       </div>
@@ -82,31 +80,28 @@ const CaseStudy2 = () => {
         <div className="content-card">
           <h1 className="card-title">CHALLENGE</h1>
           <p className="card-text">
-            Stylz struggled with a tightly coupled, undocumented backend that caused performance lags and made scaling
-            nearly impossible.
+            A fast-growing UAE startup was crippled by an unreliable, unstructured backend that caused system failures and financial transaction errors, eroding customer trust.
           </p>
         </div>
 
         <div className="content-card">
           <h3 className="card-title">OUR SOLUTION</h3>
           <p className="card-text">
-            Luminosa fully re-engineered Stylz's backend using Django, optimized its database, and refactored the
-            frontend to deliver a faster, modular, and future-ready SaaS platform.
+           Luminosa rebuilt the backend from the ground up, introduced a centralized Order Management Service and Wallet System, and executed a complex modular data migration with zero data loss.
           </p>
         </div>
 
         <div className="content-card">
           <h3 className="card-title">KEY IMPACT</h3>
           <p className="card-text">
-            The transformation enabled a 45% YoY growth in new customers for three consecutive years by drastically
-            improving system performance, scalability, and reliability.
+            The platform now supports over 150K users, with MoM sales at an all-time high and customer complaints related to transactions nearly eliminated.
           </p>
         </div>
       </div>
     </div>
         </section>
-         <div className="detailed-challenge-section">
-        <h2 className="detailed-challenge-title">THE CHALLENGE</h2>
+         <div className="detailed-challenge-section2">
+        <h2 className="detailed-challenge-title2">THE CHALLENGE</h2>
         <p>Before our intervention, Stylz was plagued with several technical and architectural issues:</p>
         <ul className="challenge-list">
           <li>
@@ -131,97 +126,79 @@ const CaseStudy2 = () => {
         <div className="solution-header">
           <h2 className="solution-subtitle">OUR SOLUTION</h2>
           <h1 className="solution-title">
-            We took a structural and strategic approach to re-engineering the Stylz platform
+            We rebuilt the backend from scratch to create a scalable, unified system that restored trust and unlocked long-term growth
           </h1>
         </div>
 
         <div className="solution-timeline">
           <div className="timeline-step">
-            <h3 className="step-title">BUSINESS DISCOVERY</h3>
-            <h4 className="step-subtitle">Understanding the Business & Domain</h4>
+            <h3 className="step-title">Backend Re-architecture</h3>
+            <h4 className="step-subtitle">New Backend Architecture</h4>
             <p className="step-description">
-              Since software engineering is more than just writing code, we invested time in understanding the business
-              logic and industry requirements.
-            </p>
+              We built a completely new backend from the ground up using a modular, scalable approach that ensures long-term maintainability.
+            </p>    
             <p className="step-description">
-              We collaborated closely with the client to map out workflows, business processes, and customer
-              expectations.
+             At Luminosa, we believe a strong backend unlocks product potential—and this one was built to grow with the business.
             </p>
           </div>
 
           <div className="timeline-step">
-            <h3 className="step-title">LEGACY SYSTEM AUDIT</h3>
-            <h4 className="step-subtitle">Reverse Engineering the Legacy System</h4>
+            <h3 className="step-title">LOGIC RE-ENGINEERING</h3>
+            <h4 className="step-subtitle">Centralized Order System</h4>
             <p className="step-description">
-              With almost no documentation available, we deconstructed the existing backend system to identify pain
-              points and inefficiencies.
+              We rewrote all core logic for memberships, bookings, and transactions, replacing fragmented modules with a centralized Order Management Service.
             </p>
             <p className="step-description">
-              We analyzed database schemas, API interactions, and application workflows to create a roadmap for
-              restructuring.
+             This made financial flows consistent, reliable, and easier to expand in the future.
             </p>
           </div>
 
           <div className="timeline-step">
             <h3 className="step-title">BACKEND RE-ARCHITECTURE</h3>
-            <h4 className="step-subtitle">Full Backend Re-engineering</h4>
+            <h4 className="step-subtitle">Introducing a Wallet System</h4>
             <p className="step-description">
-              We completely rewrote the backend in Django, ensuring it followed best practices in architecture and
-              maintainability. The new system was designed with a modular approach, making it easier to extend and
-              integrate new features.
-            </p>
-            <p className="step-description">
-              We optimized database structures using MySQL, ensuring better indexing and query performance.
+              We implemented an internal wallet system to track purchases and debits for each customer, reducing financial inconsistencies and improving trust in the platform.
             </p>
           </div>
 
           <div className="timeline-step">
-            <h3 className="step-title">PRODUCT DEVELOPMENT</h3>
-            <h4 className="step-subtitle">Frontend Optimization</h4>
+            <h3 className="step-title">DATA MIGRATION</h3>
+            <h4 className="step-subtitle">Migrating 100K+ Customer Records</h4>
             <p className="step-description">
-              While the backend was the primary focus, we also improved the frontend experience.
+            With a completely new database structure, we couldn’t rely on basic migration.
             </p>
-            <p className="step-description">
-              The web application (React) and mobile app (React Native) were refactored to communicate more efficiently
-              with the new backend.
-            </p>
-            <p className="step-description">
-              We implemented caching mechanisms and optimized API calls to improve speed and responsiveness.
-            </p>
+             <p className="step-description">
+              We executed a precise, modular migration—one module at a time—ensuring zero data loss and full integrity across over 100,000 customer records.            </p>
           </div>
         </div>
       </section>
       <div className="impact-section">
       <p className="key-impact">KEY IMPACT</p>
       <h2 className="impact-heading">
-        The re-engineered Stylz platform delivered
-        <br /> significant benefits to the client
+        From instability to innovation—building a platform 
+        <br />  that scales, performs, and earns user trust
       </h2>
 
       <div className="impact-grid">
         <div className="impact-card">
           <h3>
               <img src="/public/images/tick.svg" alt="Check icon" />
-              Enhanced Maintainability & Scalability
+              System Stability & Performance
             </h3>
           <p>
-            The new modular architecture enabled the client to add new features
-            seamlessly without disrupting existing functionalities.
+           The new backend eliminated previous performance bottlenecks, significantly improving system reliability and speed.
           </p>
           <p>
-            The system was now future-proof, capable of handling increasing
-            traffic and data load.
+           The system is now highly scalable, capable of handling increased transaction volumes.
           </p>
         </div>
 
         <div className="impact-card">
           <h3> 
              <img src="/public/images/tick.svg" alt="Check icon" />
-            Reduction in Bugs & Downtime</h3>
+            Developer Velocity & Team Efficiency</h3>
           <p>
-            With a more structured backend, the number of recurring bugs dropped
-            significantly. This allowed the client to focus on business
-            expansion rather than firefighting technical issues.
+            The new modular architecture and clean codebase significantly reduced onboarding time and enabled the client’s development team to ship new features faster with fewer bugs.
           </p>
         </div>
 
@@ -230,28 +207,28 @@ const CaseStudy2 = () => {
              <img src="/public/images/tick.svg" alt="Check icon" />
              Business Growth & Customer Acquisition</h3>
           <p>
-            With a stable and efficient system in place, the client was able to
-            roll out new features more frequently.
+            With a robust and scalable system, the product has grown to over 150K customers.
+          </p>
+          <p>
+            Sales through our new order system have reached all-time highs Month-over-Month (MoM) for the past year.
           </p>
         </div>
 
         <div className="impact-card">
           <h3> 
              <img src="/public/images/tick.svg" alt="Check icon" />
-            Improved System Performance</h3>
+            Improved Financial Accuracy</h3>
           <p>
-            The platform's response time was reduced drastically, making the app
-            and web experience smoother for end users.
+            The new Order Management Service and Wallet System streamlined financial transactions, eliminating errors in order processing and membership recharges.
+          </p>
+          <p>
+            Customer complaints related to payments and transactions dropped to near zero.
           </p>
         </div>
       </div>
     </div>
      <div className="conclusion-container">
-      <div className="growth-banner">
-        <p>This contributed to a 45% Year-on-Year (YoY) growth<br />in new customers for three consecutive years.</p>
-      </div>
-
-      <div className="conclusion-background">
+      <div className="conclusion-background2">
         <div className="conclusion-content">
           <h3>CONCLUSION</h3>
           <p>

@@ -116,6 +116,15 @@
   border-radius: 8px 8px 0 0;
   position: relative;
 }
+.detailed-challenge-section2 {
+  margin-top: 80px;
+  padding: 60px 40px;
+  background-image: url("/images/section2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
 
 .detailed-challenge-title {
   color: #a0522d;
@@ -125,7 +134,23 @@
   text-align: center;
 }
 
+.detailed-challenge-title2 {
+  color: #a0522d;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
 .detailed-challenge-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.detailed-challenge-section2 p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -535,6 +560,14 @@
   align-items: center;
 }
 
+.conclusion-background2 {
+  background-image: url('/images/Section3.png'); 
+  background-size: cover;
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .conclusion-content {
   max-width: 900px;
   color: white;

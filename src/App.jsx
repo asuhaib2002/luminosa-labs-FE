@@ -12,6 +12,7 @@ import Services from "./pages/services";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import CaseStudy1 from "./pages/casestudy1";
+import CaseStudy2 from "./pages/casestudy2";
 
 
 function App() {
