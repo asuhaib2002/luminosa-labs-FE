@@ -10,7 +10,7 @@ const LastSection = ({
   buttonLink = "#contact",
 }) => {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-sections">
       <div className="container">
         <p className="section-subtitle">{subtitle}</p>
         <h2 className="section-title">

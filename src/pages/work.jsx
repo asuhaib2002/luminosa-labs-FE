@@ -69,9 +69,6 @@ const Work = () => {
                 </p>
                 <div className="slide-buttons">
                   <button className="btn btn-primary">Schedule a Call</button>
-                  <Link to="/casestudy1" className="btn btn-secondary">
-                    Learn More →
-                  </Link>
                 </div>
               </div>
             </div>
@@ -79,7 +76,7 @@ const Work = () => {
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      
       <section className="case-studies-section" style={{ padding: "4rem 2rem" }}>
         <h2 className="text-center text-lg font-bold uppercase text-red-800 mb-2">
           Our Case Studies
