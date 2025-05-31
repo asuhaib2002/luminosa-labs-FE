@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import "./HeroCarousel.css"
+import Header from "./Header"
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
