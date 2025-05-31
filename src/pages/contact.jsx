@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import "./Contact.css"
+import "./contact.css"
 import Header from "../components/Header"
 const ContactPage = () => {
   const [formData, setFormData] = useState({
