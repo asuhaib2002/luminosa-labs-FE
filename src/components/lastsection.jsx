@@ -1,6 +1,6 @@
 // src/components/LastSection.jsx
 import React from "react"
-import "./LastSection.css"
+import "./lastSection.css"
 
 const LastSection = ({
   subtitle = "GET STARTED WITH US",
