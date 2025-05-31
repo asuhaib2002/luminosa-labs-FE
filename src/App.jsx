@@ -7,7 +7,7 @@ import Section2 from "./components/section2";
 import Testimonials from "./components/testimonials";
 import Lastsection from "./components/lastsection";
 import Footer from "./components/Footer";
-import Work from "./pages/Work";
+import Work from "./pages/work";
 import Services from "./pages/services";
 import About from "./pages/about";
 import Contact from "./pages/contact";
