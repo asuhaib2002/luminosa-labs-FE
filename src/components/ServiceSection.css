@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 .service-section {
   background: linear-gradient(
     135deg,
-    rgb(240, 228, 220) 0%,
-    rgba(111, 40, 16, 0.1) 100%
+    rgb(239, 239, 239) 0%,
+    rgba(111, 40, 16, 0.304) 100%
   );
   padding: 100px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
 }
 
 .container {
@@ -17,20 +17,21 @@
 .firstparagraph {
   text-align: center;
   margin-bottom: 100px;
-}
+} 
 
-.subtitle {
-  color: #b8621b;
-  font-size: 14px;
+.subtitle1 {
+  color: rgba(133, 34, 0, 1);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 2px;
   margin: 0 0 20px 0;
   text-transform: uppercase;
 }
 
-.title {
-  color: #2d2d2d;
-  font-size: 48px;
+.title1 {
+  color: #222121;
+  font-size: 54px;
+  font-family: 'Zain', sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 30px 0;
@@ -39,12 +40,15 @@
   margin-right: auto;
 }
 
-.description {
-  color: #666666;
-  font-size: 16px;
+.description1 {
+  color: #252222;
+  font-size: 20px;
+  font-weight: 600px;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.6;
-  margin: 0;
-  max-width: 700px;
+  margin: 0;  
+  max-width: 850px;
+  margin-bottom: -20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,7 +62,7 @@
 }
 
 .service-card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 100px 100px 0 0;
   padding: 50px 30px 45px 30px; /* Increased padding */
   text-align: center;
@@ -80,7 +84,6 @@
 .icon-circle {
   width: 80px;
   height: 80px;
-  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -89,14 +92,15 @@
 }
 
 .service-icon {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .service-title {
-  color: #2d2d2d;
-  font-size: 16px;
+  color: rgba(63, 16, 0, 1);
+  font-family: 'Zain';
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0 0 20px 0;
@@ -105,10 +109,12 @@
 }
 
 .service-description {
-  color: #666666;
-  font-size: 14px;
+  color: rgba(63, 16, 0, 1);
+  font-size: 18px;
   line-height: 1.6;
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
+
 }
 
 /* Responsive Design */

@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-
 body {
-  font-family: work-sans, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.6;
 }
 
 .contact-page {
-  min-height: 120vh;
+  min-height: 110vh;
   background-image: url("/public/images/contact.svg");
   background-size: cover;
   background-position: center;
@@ -15,10 +14,9 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  padding-top: -20px;
+  padding-top: 0;
   margin-bottom: -70px;
 }
-
 
 /* Main Content */
 .main-content {
@@ -46,31 +44,41 @@ body {
 
 /* Contact Info Section */
 .contact-label {
-  color: #666;
-  font-size: 12px;
-  font-weight: 600;
+  color: rgba(133, 34, 0, 1);
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 8px;
 }
 
+.contact-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin: 70px 0 20px 30px;
+}
 .contact-title {
-  font-size: 32px;
+  font-size: 64px;
+  font-family: "Zain", sans-serif;
   font-weight: bold;
   color: #333;
-  margin-bottom: 16px;
+  margin: -20px 0 -18px -5px;
 }
 
 .contact-description {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  color: #1e1b1b;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  margin: 0 0 30px 30px;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 0 0 10px 30px;
 }
 
 .contact-item {
@@ -82,15 +90,15 @@ body {
 }
 
 .contact-icon {
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 26px;
+  margin-top: -10px;
 }
 
 /* Form Styles */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 17px;
 }
 
 .form-group {
@@ -100,7 +108,7 @@ body {
 }
 
 .form-group label {
-  color: #666;
+  color: #232020;
   font-size: 14px;
   font-weight: 500;
 }
@@ -131,10 +139,10 @@ body {
   background: rgba(133, 34, 0, 1);
   color: white;
   border: none;
-  padding: 14px 24px;
+  padding: 6px 24px;
   border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s;
   align-self: flex-start;
@@ -150,6 +158,7 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -159,25 +168,16 @@ body {
 
   .contact-card {
     padding: 30px 20px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
-
-  .contact-title {
-    font-size: 26px;
-  }
-}
-@media (max-width: 768px) {
+  
   .contact-page {
     min-height: 130vh;
     padding-top: 90px;
     background-size: cover;
     background-position: top;
     margin-bottom: -40px;
-  }
-
-  .contact-card {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 30px 20px;
   }
 }
 
@@ -194,13 +194,12 @@ body {
     font-size: 24px;
   }
 
-  .footer {
-    padding: 20px 15px;
-  }
-
   .contact-page {
     min-height: 150vh;
     padding-top: 80px;
   }
-}
 
+  .footer {
+    padding: 20px 15px;
+  }
+}

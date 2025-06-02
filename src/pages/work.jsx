@@ -68,7 +68,7 @@ const Work = () => {
                   ))}
                 </p>
                 <div className="slide-buttons">
-                  <button className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Schedule a Call</button>
+                  <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Schedule a Call</Link>
                 </div>
               </div>
             </div>
@@ -78,14 +78,14 @@ const Work = () => {
 
       
       <section className="case-studies-section" style={{ padding: "4rem 2rem" }}>
-        <h1 className="text-center text-lg font-bold uppercase " style={{  fontSize: '14px',color: "rgba(133, 34, 0, 1)" }}>
+        <h1 className="text-center text-lg font-bold uppercase " style={{ fontFamily:"Work Sans",  fontSize: '18px',color: "rgba(133, 34, 0, 1)" }}>
           Our Case Studies
         </h1>
-        <h3 className="text-center text-lg font-normal uppercase " style={{ fontFamily: "Work Sans", fontSize: '24px',color: "rgb(0, 0, 0)" }}>
+        <h3 className="text-center text-lg font-normal " style={{ fontFamily: "Zain", margin:"40px", fontSize: '54px',color: "rgb(24, 21, 21)" }}>
           Our Work Speaks for Itself
         </h3>
 
-        <div className="case-studies-grid" style={{ margin: "80PX", display: "grid", gap: "2rem", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+        <div className="case-studies-grid" style={{ margin: "90PX", display: "grid", gap: "2rem", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
           {caseStudies.map((study, index) => (
             <div className="case-card" key={index} style={{ borderRadius: "20px", overflow: "hidden", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.08)", padding: "1rem" }}>
               <img src={study.image} alt={study.title} style={{ width: "100%", borderRadius: "16px" }} />
@@ -96,11 +96,11 @@ const Work = () => {
                   </span>
                 ))}
               </div>
-              <h4 style={{ fontWeight: "700", marginTop: "1rem" }}>{study.title}</h4>
-              <p style={{ fontSize: "14px", marginTop: "0.5rem" }}>{study.description}</p>
-              <Link to={study.link} style={{ marginTop: "1rem", display: "inline-block", fontWeight: "bold", color: "#d32f2f" }}>
+              <h4 style={{ fontFamily:"Zain", fontSize:"26px", fontWeight: "700", marginTop: "1rem",  }}>{study.title}</h4>
+              <p style={{ fontSize: "16px", fontWeight:"400",  fontFamily:"Work Sans", marginTop: "0.5rem" , color: "rgb(70, 19, 2)" }}>{study.description}</p>
+              <Link to={study.link} style={{ marginTop: "1rem", display: "inline-block", fontWeight: "bold", color: "rgba(133, 34, 0, 1)" }}>
                 Read More →
-              </Link>
+              </Link> 
             </div>
           ))}
         </div>

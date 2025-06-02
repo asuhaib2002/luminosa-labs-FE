@@ -48,10 +48,10 @@ const CaseStudy3 = () => {
             <div className="slide-content-wrapper">
               <div className="slide-content">
                 <div className="tags">
-               <span className="tag">Product Development</span>
-               <span className="tag">Re-Engineering</span>
+               <span className="tag3">Product Development</span>
+               <span className="tag3">Re-Engineering</span>
                </div>
-               <p className="font-ag">Case Study</p>
+               <p className="font-ag2">Case Study</p>
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
                 <p className="date" style={{ fontStyle:"italic"}}>5 min Read • January 20, 2025</p>
@@ -87,7 +87,7 @@ const CaseStudy3 = () => {
         <img src="images/app.png" alt="Ride-hailing App Preview" />
       </div>
       <div className="text-container">
-        <h2>OUR SOLUTION</h2>
+        <h2 style={{ fontSize: "22px", fontWeight:"600",  fontFamily:"Work Sans" , color: "rgb(109, 42, 19)" }}>OUR SOLUTION</h2>
         <ul>
           <li>
             <strong>Women-First Approach</strong> – Designed a ride-hailing service exclusively for women, ensuring a safer travel experience.
@@ -109,12 +109,12 @@ const CaseStudy3 = () => {
     </section>
 
     <section className="case-studies-section" style={{ padding: "4rem 2rem" }}>
-  <h2 className="text-left text-lg font-bold uppercase " style={{  fontSize: '16px',color: "rgba(133, 34, 0, 1)" }}>
+  <h2 className="text-left text-lg font-bold uppercase " style={{ fontFamily:"Work Sans",  fontSize: '20px',color: "rgba(133, 34, 0, 1)" }}>
     EXPLORE OUR CASE STUDIES
   </h2>
-  <h3 className="text-left mb-10" style={{ color: "#000", fontSize: "36px", fontWeight: "400" }}>
-    Read More
-  </h3>
+  <h3 className="text-left mb-10" style={{ fontFamily:"Zain",  color: "#000", fontSize: "54px", fontWeight: "400" }}>
+    Read More 
+  </h3> 
 
   <div className="case-studies-grid">
     {caseStudies.map((study, index) => (
@@ -122,11 +122,11 @@ const CaseStudy3 = () => {
         <img src={study.image} alt={study.title} className="case-image" />
         <div className="case-tags">
           {study.tags.map((tag, i) => (
-            <span key={i} className="case-tag">{tag}</span>
+            <span key={i} style={{ backgroundColor: "rgb(163, 72, 11)", color: "#fff", padding: "4px 10px", borderRadius: "12px", fontSize: "12px" }}>{tag}</span>
           ))}
         </div>
-        <h4 className="case-title">{study.title}</h4>
-        <p className="case-desc">{study.description}</p>
+        <h4  style={{ fontFamily:"Zain", fontSize:"26px", fontWeight: "700", marginTop: "1rem",  }}>{study.title}</h4>
+        <p style={{ fontSize: "16px", fontWeight:"400",  fontFamily:"Work Sans", marginTop: "0.5rem" , color: "rgb(70, 19, 2)" }}>{study.description}</p>
         <Link to={study.link} className="read-more-link">Read More →</Link>
       </div>
     ))}

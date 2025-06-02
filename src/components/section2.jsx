@@ -44,7 +44,7 @@ const Section2 = () => {
     ["card4.png", "EMPATHY-", "DRIVEN"]
   ]
 
-  return (
+  return ( 
     <section className="luminosa-section" ref={sectionRef}>
       <div className="container">
         <div className="paragragh">

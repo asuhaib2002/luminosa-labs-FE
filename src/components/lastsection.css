@@ -6,12 +6,27 @@
 }
 
 .contact-button-container {
-  margin-top: 40px;
+  margin-top: 40px; 
+
   
 }
-.section-subtitle{
-  color:rgb(163, 72, 11);
+.section-title{
+  color:rgb(40, 36, 36);
+  font-family: "Zain", sans-serif;
+  font-size: 54px;
 }
+.section-subtitle{
+  color:rgba(133, 34, 0, 1);
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+.section-description {
+  color: #201d1de7;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

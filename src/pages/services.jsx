@@ -41,7 +41,7 @@ const Services = () => {
                   ))}
                 </p>
                 <div className="slide-buttons">
-                  <button className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Schedule a Call</button>
+                  <Link to="/contact" className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Schedule a Call</Link>
                 </div>
               </div>
             </div>
