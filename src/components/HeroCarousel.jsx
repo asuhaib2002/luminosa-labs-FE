@@ -69,13 +69,17 @@ const HeroCarousel = () => {
         )}
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
-                {(idx === 1 || idx === 2) ? (
+                {idx === 1 ? (
   <div className="slide-buttons">
-    <Link to="/casestudy1" className="btn btn-primary">Read Case Study</Link>
+    <Link to="/casestudy1" className="btn btn-primary">Read Case Study 1</Link>
+  </div>
+) : idx === 2 ? (
+  <div className="slide-buttons">
+    <Link to="/casestudy2" className="btn btn-primary">Read Case Study 2</Link>
   </div>
 ) : (
   <div className="slide-buttons">
-    <button className="btn btn-primary">Get Started</button>
+    <Link to="/contact" className="btn btn-primary">Contact Us</Link>
     <Link to="/about" className="btn btn-secondary">Learn More</Link>
   </div>
 )}
