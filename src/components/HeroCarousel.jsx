@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom";
 import "./HeroCarousel.css"
+import Header from "./Header"
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -15,16 +17,16 @@ const HeroCarousel = () => {
     {
       id: 2,
       image: "public/images/bg2.png", // Replace with your own image
-      title: "Innovative Technology. Exceptional Results.",
+      title: "From Bottlenecks to Breakthroughs",
       description:
-        "Transform your business with cutting-edge solutions that drive growth and innovation. Our expert team delivers scalable applications that exceed expectations.",
+      "We helped Styles overcome serious technical hurdles, re-engineering their platform into a fast, scalable SaaS solution that fueled 45% year-over-year growth. ", 
     },
     {
       id: 3,
-      image: "public/images/bg3.png", // Replace with your own image
-      title: "Smart Solutions. Bright Future.",
+      image: "public/images/bg3.png", 
+      title: "From Startup Struggles to Scalable Success",
       description:
-        "Partner with us to build the future of your business. We combine creativity with technology to deliver solutions that make a lasting impact.",
+        "We re-engineered a confidential UAE-based product, building a solid backend foundation that fueled growth to 150K customers and record-breaking sales.",
     },
   ]
 
@@ -48,7 +50,7 @@ const HeroCarousel = () => {
   return (
     <section className="hero-carousel">
       <div className="carousel-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-        {slides.map((slide) => (
+        {slides.map((slide, idx) => (
           <div key={slide.id} className="carousel-slide">
             <div className="slide-image-container">
               <div className="slide-overlay"></div>
@@ -56,12 +58,31 @@ const HeroCarousel = () => {
             </div>
             <div className="slide-content-wrapper">
               <div className="slide-content">
+                 {(idx === 1 || idx === 2) && (
+          <>
+            <p className="font-ag">Case Study</p>
+            <div className="tags2">
+              <span className="tag1">Product Development</span>
+              <span className="tag1">Re-Engineering</span>
+            </div>
+          </>
+        )}
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
-                <div className="slide-buttons">
-                  <button className="btn btn-primary">Get Started</button>
-                  <button className="btn btn-secondary">Learn More</button>
-                </div>
+                {idx === 1 ? (
+  <div className="slide-buttons">
+    <Link to="/casestudy1" className="btn btn-primary">Read Case Study 1</Link>
+  </div>
+) : idx === 2 ? (
+  <div className="slide-buttons">
+    <Link to="/casestudy2" className="btn btn-primary">Read Case Study 2</Link>
+  </div>
+) : (
+  <div className="slide-buttons">
+    <Link to="/contact" className="btn btn-primary">Contact Us</Link>
+    <Link to="/about" className="btn btn-secondary">Learn More</Link>
+  </div>
+)}
               </div>
             </div>
           </div>

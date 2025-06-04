@@ -48,13 +48,13 @@ const CaseStudy1 = () => {
             <div className="slide-content-wrapper">
               <div className="slide-content">
                 <div className="tags">
-               <span className="tag">Product Development</span>
-               <span className="tag">Re-Engineering</span>
+               <span className="tag3">Product Development</span>
+               <span className="tag3">Re-Engineering</span>
                </div>
-               <p className="font-ag">Case Study</p>
+               <p className="font-ag2">Case Study</p>
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
-                <p className="date" style={{ fontStyle:"italic"}}>5 min Read • July 12, 2024</p>
+                <p className="date">5 min Read • July 12, 2024</p>
               </div>
             </div>
           </div>
@@ -269,10 +269,10 @@ const CaseStudy1 = () => {
       </div>
     </div>
     <section className="case-studies-section" style={{ padding: "4rem 2rem" }}>
-  <h2 className="text-left text-lg font-bold uppercase " style={{  fontSize: '16px',color: "rgba(133, 34, 0, 1)" }}>
+  <h2 className="text-left text-lg font-bold uppercase " style={{  fontSize: '18px',color: "rgba(133, 34, 0, 1)" , fontFamily:"Work Sans"}}>
     EXPLORE OUR CASE STUDIES
   </h2>
-  <h3 className="text-left mb-10" style={{ color: "#000", fontSize: "36px", fontWeight: "400" }}>
+  <h3 className="text-left mb-10" style={{ color: "#000", fontSize: "54px", fontWeight: "400" , fontFamily: "Zain"}}>
     Read More
   </h3>
 
@@ -282,11 +282,11 @@ const CaseStudy1 = () => {
         <img src={study.image} alt={study.title} className="case-image" />
         <div className="case-tags">
           {study.tags.map((tag, i) => (
-            <span key={i} className="case-tag">{tag}</span>
+            <span key={i}  style={{ backgroundColor: "rgb(163, 72, 11)", color: "#fff", padding: "4px 10px", borderRadius: "12px", fontSize: "12px" }}>{tag}</span>
           ))}
         </div>
-        <h4 className="case-title">{study.title}</h4>
-        <p className="case-desc">{study.description}</p>
+        <h4  style={{ fontFamily:"Zain", fontSize:"26px", fontWeight: "700", marginTop: "1rem",  }}>{study.title}</h4>
+        <p style={{ fontSize: "16px", fontWeight:"400",  fontFamily:"Work Sans", marginTop: "0.5rem" , color: "rgb(70, 19, 2)" }}>{study.description}</p>
         <Link to={study.link} className="read-more-link">Read More →</Link>
       </div>
     ))}
@@ -295,7 +295,7 @@ const CaseStudy1 = () => {
 
         
     </>
-  )
+  ) 
 };
 
 export default CaseStudy1;

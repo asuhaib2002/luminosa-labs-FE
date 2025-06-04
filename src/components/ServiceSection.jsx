@@ -38,7 +38,7 @@ const ServiceSection = () => {
       icon: "/images/product.svg",
       alt: "Product Development",
       title: "PRODUCT\nDEVELOPMENT",
-      description:
+      description: 
         "From MVPs to full-scale platforms, we build reliable, future-ready software that scales effortlessly with your business.",
     },
     {
@@ -68,13 +68,13 @@ const ServiceSection = () => {
     <section className="service-section">
       <div className="container">
         <div className="firstparagraph">
-          <p className="subtitle">WHAT DO WE DO?</p>
-          <h2 className="title">
+          <p className="subtitle1">WHAT DO WE DO?</p>
+          <h2 className="title1"> 
             Light the Way with
             <br />
             Smart, Scalable Solutions
           </h2>
-          <p className="description">
+          <p className="description1">
             We blend creativity with technology to develop solutions that drive growth and elevate brands. Our services
             cover every step of the digital journey, ensuring your business not only meets but exceeds its goals.
           </p>

@@ -1,18 +1,33 @@
-// src/components/Header.jsx
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({ logoText = "LUMINOSA" }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
+    return () => { document.body.style.overflow = "auto"; };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHideHeader(true);
+      } else {
+        setHideHeader(false); 
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-
   return (
-    <header className="header">
+    <header  className={`header${hideHeader ? " header--hidden" : ""}`}>
       <div className="header-container">
         <Link to="/" className="logo">
        <img src="public/images/lum.svg" alt="Logo" className="logo-img" />

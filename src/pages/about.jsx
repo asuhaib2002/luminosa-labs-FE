@@ -3,16 +3,16 @@ import Header from "../components/Header"
 import "../components/HeroCarousel.css"
 import LastSection from "../components/lastsection"
 import Section2 from "../components/section2"
-
+import bulb from '../assets/bulb.gif';
+import "./About.css" 
 const About = () => {
   const slide = {
-    image: "/images/aboutbg.png", 
+    image: "/images/aboutbg.png",
     title: "Bright Ideas, Built to Scale",
     description:
       "At Luminosa Labs, we build digital experiences that go beyond the expected—scalable, beautiful, and engineered to grow with your vision.",
   }
 
-  const sectionRef = useRef(null)
   const cardsRef = useRef([])
 
   useEffect(() => {
@@ -57,7 +57,6 @@ const About = () => {
     <>
       <Header logoText="LUMINOSA" />
 
-
       <section className="hero-carousel">
         <div className="carousel-container" style={{ transform: "translateX(0%)" }}>
           <div className="carousel-slide">
@@ -75,8 +74,18 @@ const About = () => {
                 <h1 className="slide-title">{slide.title}</h1>
                 <p className="slide-description">{slide.description}</p>
                 <div className="slide-buttons">
-                  <button className="btn btn-primary" style={{ backgroundColor: "rgb(255, 255, 255)", color: "black", padding: "13px 24px", borderRadius: "10px", fontSize: "18px" }}>Get Started</button>
-                  
+                  <button
+                    className="btn btn-primary"
+                    style={{
+                      backgroundColor: "rgb(255, 255, 255)",
+                      color: "black",
+                      padding: "13px 24px",
+                      borderRadius: "10px",
+                      fontSize: "18px",
+                    }}
+                  >
+                    Get Started
+                  </button>
                 </div>
               </div>
             </div>
@@ -92,11 +101,25 @@ const About = () => {
           backgroundColor: "#f9f9f9",
         }}
       >
-        <h4 style={{ color: "#8B2C19", textTransform: "uppercase", fontWeight: "600", marginBottom: "1rem" }}>
+        <h4
+          style={{
+            color: "rgba(133, 34, 0, 1)",
+            fontSize: "24px",
+            textTransform: "uppercase",
+            fontWeight: "600",
+            marginBottom: "1rem",
+            fontFamily: "Work Sans",
+          }}
+        >
           Our Mission
         </h4>
         <h2
-          style={{ fontSize: "2rem", fontWeight: "700", marginBottom: "1.5rem", color: "#1a1a1a" }}
+          style={{
+            fontSize: "54px",
+            marginBottom: "1.5rem",
+            color: "#1a1a1a",
+            fontFamily: "Zain",
+          }}
         >
           To transform ambitious ideas into powerful digital
           <br />
@@ -109,15 +132,38 @@ const About = () => {
             fontSize: "1.1rem",
             color: "#3248a8",
             lineHeight: "1.6",
+            fontFamily: "Work Sans",
           }}
         >
           We exist to empower{" "}
           <span style={{ color: "#3248a8", fontWeight: "600" }}>bold</span> thinkers with the
           tools, systems,
           <br />
-          and strategy to shape the future—<span style={{ color: "#3248a8", fontWeight: "600" }}>one luminous product at a time.</span>
+          and strategy to shape the future—{" "}
+          <span style={{ color: "#3248a8", fontWeight: "600" }}>
+            one luminous product at a time.
+          </span>
         </p>
       </section>
+       <section className="about-section">
+      <div className="about-content">
+        <div className="about-text">
+          <h3 className="about-subtitle">WHAT DRIVES US</h3>
+          <h2 className="about-title">
+            We're not just engineers or designers — we're problem-solvers, strategists, and collaborators </h2> 
+          <p className="about-description">
+            We approach every project with empathy and logic, blending creativity with structure to help our partners grow confidently in a competitive world.
+          </p>
+        </div>
+        <div className="about-image-container">
+          <div className="bulb-container">
+            <img src={bulb} alt="Innovative ideas" className="bulb-gif" />
+            <div className="brown-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
       <Section2 />
       <LastSection />

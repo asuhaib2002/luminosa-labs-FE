@@ -3,14 +3,28 @@
   margin-bottom: 15px;
 }
 
-.tag {
+.font-ag2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0.8px;
+  margin-left: 3px;
+  margin-top: -20px;
+}
+.date{
+  font-family: Work Sans, sans-serif;
+  font-style: italic;
+}
+.tag3 {
   display: inline-block;
   background-color: #8b3506;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   padding: 8px 14px;
-  border-radius: 15px;
+  border-radius: 18px;
   margin-right: 10px;
 }
 
@@ -35,23 +49,23 @@
 }
 
 .seamless-text {
-  color: #a0522d;
-  font-size: 14px;
+  color: rgba(133, 34, 0, 1);
+  font-size: 20px;
   font-weight: 600;
-  font-family: work-sans, sans-serif;
+  font-family: "Work Sans", sans-serif;
   letter-spacing: 1px;
   margin: 0 0 20px 0;
   text-transform: uppercase;
 }
 
 .main-title {
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 400;
   line-height: 1.2;
   color: #2c2c2c;
   margin: 0;
   max-width: 500px;
-  font-family: work-sans, sans-serif;
+  font-family: "Zain", sans-serif;
 }
 
 .right-content {
@@ -60,9 +74,9 @@
 }
 
 .overview-title {
-  font-family: work-sans, sans-serif;
-  color: #a0522d;
-  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: rgba(133, 34, 0, 1);
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
    margin-top: -30px;
@@ -71,9 +85,9 @@
 }
 
 .overview-text {
-  font-family: work-sans, sans-serif;
-  color: #666;
-  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(68, 19, 2);
+  font-size: 22px;
   line-height: 1.6;
   margin-top: 20px;
 }
@@ -93,8 +107,8 @@
 
 .card-title {
   font-family: work-sans, sans-serif;
-  color: #423838;
-  font-size: 14px;
+  color: #3b3333;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0 0 20px 0;
@@ -103,7 +117,7 @@
 
 .card-text {
   color: #231f1f;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin: 0;
 }
@@ -127,7 +141,8 @@
 }
 
 .detailed-challenge-title {
-  color: #a0522d;
+  color: rgba(133, 34, 0, 1);
+  font-family: "Work Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 30px 0;
@@ -135,7 +150,7 @@
 }
 
 .detailed-challenge-title2 {
-  color: #a0522d;
+  color: rgba(133, 34, 0, 1);
   font-size: 24px;
   font-weight: 600;
   margin: 0 0 30px 0;
@@ -143,7 +158,8 @@
 }
 
 .detailed-challenge-section p {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
   line-height: 1.6;
   margin-bottom: 20px;
   max-width: 900px;
@@ -151,8 +167,9 @@
   margin-right: auto;
 }
 .detailed-challenge-section2 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 20px;
   max-width: 900px;
   margin-left: auto;
@@ -176,6 +193,7 @@
   font-weight: 600;
 }
 .solution-section {
+  font-family: 'Work Sans', sans-serif;
   margin-top: 0px;
   margin-bottom: -40px;
   padding: 60px 40px;
@@ -190,8 +208,9 @@
 }
 
 .solution-subtitle {
-  color: #a0522d;
-  font-size: 14px;
+  color: rgba(133, 34, 0, 1);
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0 0 20px 0;
@@ -199,7 +218,8 @@
 }
 
 .solution-title {
-  font-size: 36px;
+  font-family: "Zain", sans-serif;
+  font-size: 54px;
   font-weight: 400;
   line-height: 1.3;
   color: #2c2c2c;
@@ -263,8 +283,8 @@
 }
 
 .step-title {
-  color: #a0522d;
-  font-size: 12px;
+  color: rgb(167, 82, 53);
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0 0 10px 0;
@@ -292,9 +312,9 @@
 }
 
 .step-description {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #666;
+  color: rgba(133, 34, 0, 1);
   margin: 0 0 12px 0;
 }
 
@@ -433,16 +453,19 @@
 }
 
 .key-impact {
-  color: #9e4b2e;
+  color: rgba(133, 34, 0, 1);
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 14px;
   margin-bottom: 10px;
 }
 
 .impact-heading {
   color: #1a1a1a;
-  font-size: 28px;
+  font-family: "Zain", sans-serif;
+  font-size: 54px;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 50px;
@@ -478,7 +501,7 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #6d3e0e;
+  color: rgb(119, 33, 5);
   display: flex;
   align-items: center;
 }
@@ -537,6 +560,7 @@
 }
 .conclusion-container {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   margin-top:   40px;
   margin-bottom: -40px;
 }
@@ -546,7 +570,8 @@
   color: white;
   text-align: center;
   padding: 40px 20px;
-  font-size: 35px;
+  font-family: 'Zain', sans-serif;
+  font-size: 54px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -577,14 +602,16 @@
 }
 
 .conclusion-content h3 {
-  font-size: 16px;
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
 .conclusion-content p {
-  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
