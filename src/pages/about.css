@@ -87,18 +87,27 @@
   .about-content {
     flex-direction: column;
   }
+  .about-section{
+    padding: 40px 90px 40px 50px;
+  }
   
   .about-text {
     padding-right: 0;
     margin-bottom: 40px;
   }
-  
+  .about-subtitle {
+    font-size: 18px;
+  }
   .about-title {
-    font-size: 28px;
+    width: 130%;
+  }
+  .bulb-gif{
+    width: 100%;
+    height: 100%;
   }
   
   .about-description {
-    font-size: 16px;
+    font-size: 24px;
   }
   
   .bulb-container {

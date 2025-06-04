@@ -27,10 +27,10 @@
   margin-top: 16px;
 }
 
+@media (max-width: 1024px) {
+  .contact-sections {
+    padding: 60px 40px;
 
-/* Responsive */
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 60px 0;
   }
+
 }

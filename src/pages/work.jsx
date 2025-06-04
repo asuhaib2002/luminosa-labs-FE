@@ -81,7 +81,7 @@ const Work = () => {
         <h1 className="text-center text-lg font-bold uppercase " style={{ fontFamily:"Work Sans",  fontSize: '18px',color: "rgba(133, 34, 0, 1)" }}>
           Our Case Studies
         </h1>
-        <h3 className="text-center text-lg font-normal " style={{ fontFamily: "Zain", margin:"40px", fontSize: '54px',color: "rgb(24, 21, 21)" }}>
+        <h3  style={{ fontFamily: "Zain", margin:"40px", textAlign: "center", fontSize: '54px',color: "rgb(24, 21, 21)" }}>
           Our Work Speaks for Itself
         </h3>
 

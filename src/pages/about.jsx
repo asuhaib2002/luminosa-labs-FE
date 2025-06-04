@@ -150,8 +150,7 @@ const About = () => {
         <div className="about-text">
           <h3 className="about-subtitle">WHAT DRIVES US</h3>
           <h2 className="about-title">
-            We're not just engineers or designers — we're problem-solvers, strategists, and collaborators
-          </h2>
+            We're not just engineers or designers — we're problem-solvers, strategists, and collaborators </h2> 
           <p className="about-description">
             We approach every project with empathy and logic, blending creativity with structure to help our partners grow confidently in a competitive world.
           </p>

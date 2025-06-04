@@ -64,7 +64,7 @@ background-image: url("/images/landscape.png");
 /* Responsive */
 @media (max-width: 768px) {
   .testimonials {
-    padding: 60px 0;
+    padding: 60px 60px;
   }
 
   .testimonial-card {
