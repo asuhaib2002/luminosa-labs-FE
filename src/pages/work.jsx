@@ -6,7 +6,7 @@ import Lastsection from "../components/lastsection"
 
 const Work = () => {
   const slide = {
-    image: "public/images/workbg.png",
+    image: "/images/workbg.png",
     title: "Illuminating Our Success Stories",
     description:
       "From re-engineering legacy systems to crafting cutting-edge digital experiences, each project showcases our commitment to delivering impactful, scalable solutions. Explore our latest case studies to see how we've helped businesses shine brighter.",

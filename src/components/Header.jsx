@@ -30,7 +30,7 @@ const Header = ({ logoText = "LUMINOSA" }) => {
     <header  className={`header${hideHeader ? " header--hidden" : ""}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-       <img src="public/images/lum.svg" alt="Logo" className="logo-img" />
+       <img src="/images/lum.svg" alt="Logo" className="logo-img" />
        <span className="logo-text">{logoText}</span>
        </Link>
 

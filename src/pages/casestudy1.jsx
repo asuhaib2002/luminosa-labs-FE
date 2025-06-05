@@ -201,7 +201,7 @@ const CaseStudy1 = () => {
       <div className="impact-grid">
         <div className="impact-card">
           <h3>
-              <img src="/public/images/tick.svg" alt="Check icon" />
+              <img src="/images/tick.svg" alt="Check icon" />
               Enhanced Maintainability & Scalability
             </h3>
           <p>
@@ -216,7 +216,7 @@ const CaseStudy1 = () => {
 
         <div className="impact-card">
           <h3> 
-             <img src="/public/images/tick.svg" alt="Check icon" />
+             <img src="/images/tick.svg" alt="Check icon" />
             Reduction in Bugs & Downtime</h3>
           <p>
             With a more structured backend, the number of recurring bugs dropped
@@ -227,7 +227,7 @@ const CaseStudy1 = () => {
 
         <div className="impact-card">
           <h3>
-             <img src="/public/images/tick.svg" alt="Check icon" />
+             <img src="/images/tick.svg" alt="Check icon" />
              Business Growth & Customer Acquisition</h3>
           <p>
             With a stable and efficient system in place, the client was able to
@@ -237,7 +237,7 @@ const CaseStudy1 = () => {
 
         <div className="impact-card">
           <h3> 
-             <img src="/public/images/tick.svg" alt="Check icon" />
+             <img src="/images/tick.svg" alt="Check icon" />
             Improved System Performance</h3>
           <p>
             The platform's response time was reduced drastically, making the app

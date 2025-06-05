@@ -7,7 +7,7 @@ const Testimonials = () => {
         <div className="testimonial-card">
           <div className="quote-icon">
             <div className="quote-icon">
-            <img src="public/images/colon.svg" alt="Quote Icon" width={48} height={48} />
+            <img src="/images/colon.svg" alt="Quote Icon" width={48} height={48} />
           </div>
           </div>
           <p className="testimonial-text">
