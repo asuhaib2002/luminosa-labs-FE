@@ -4,7 +4,7 @@ import "../components/HeroCarousel.css"
 import LastSection from "../components/lastsection"
 import Section2 from "../components/section2"
 import bulb from '../assets/bulb.gif';
-import "./About.css" 
+import "./about.css" 
 const About = () => {
   const slide = {
     image: "/images/aboutbg.png",
