@@ -1,10 +1,12 @@
 // src/components/LastSection.jsx
 import React from "react"
-import "./LastSection.css"
  
+import "./lastsection.css"
+
+
 const LastSection = ({
   subtitle = "GET STARTED WITH US",
-  title = "Let's Build Something\nExtraordinary Together",
+  title = "Let's Build Something\nExtraordinary Together ",
   description = "Your vision deserves more than just execution—it needs innovation, strategy, and a touch of brilliance. Whether you're launching a new product, revamping your platform, or integrating AI, we're here to turn your ideas into reality.",
   buttonText = "Contact Us",
   buttonLink = "/Contact",
