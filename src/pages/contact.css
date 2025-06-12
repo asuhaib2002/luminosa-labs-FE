@@ -7,7 +7,7 @@ body {
 
 .contact-page {
   min-height: 110vh;
-  background-image: url("/public/images/contact.svg");
+  background-image: url("/images/contact.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

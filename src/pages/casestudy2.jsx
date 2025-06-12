@@ -182,7 +182,7 @@ const CaseStudy2 = () => {
       <div className="impact-grid">
         <div className="impact-card">
           <h3>
-              <img src="/public/images/tick.svg" alt="Check icon" />
+              <img src="/images/tick.svg" alt="Check icon" />
               System Stability & Performance
             </h3>
           <p>
@@ -195,7 +195,7 @@ const CaseStudy2 = () => {
 
         <div className="impact-card">
           <h3> 
-             <img src="/public/images/tick.svg" alt="Check icon" />
+             <img src="/images/tick.svg" alt="Check icon" />
             Developer Velocity & Team Efficiency</h3>
           <p>
             The new modular architecture and clean codebase significantly reduced onboarding time and enabled the client’s development team to ship new features faster with fewer bugs.
@@ -204,7 +204,7 @@ const CaseStudy2 = () => {
 
         <div className="impact-card">
           <h3>
-             <img src="/public/images/tick.svg" alt="Check icon" />
+             <img src="/images/tick.svg" alt="Check icon" />
              Business Growth & Customer Acquisition</h3>
           <p>
             With a robust and scalable system, the product has grown to over 150K customers.
@@ -216,7 +216,7 @@ const CaseStudy2 = () => {
 
         <div className="impact-card">
           <h3> 
-             <img src="/public/images/tick.svg" alt="Check icon" />
+             <img src="/images/tick.svg" alt="Check icon" />
             Improved Financial Accuracy</h3>
           <p>
             The new Order Management Service and Wallet System streamlined financial transactions, eliminating errors in order processing and membership recharges.

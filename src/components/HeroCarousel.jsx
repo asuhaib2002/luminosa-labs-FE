@@ -9,21 +9,21 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "public/images/bg1.png", // Replace with your own image
+      image: "/images/bg1.png", // Replace with your own image
       title: "Limitless Vision. Logical Solutions. Luminous Results.",
       description:
         "At Luminosa, we go beyond building software—we create intuitive, scalable, and high-performing digital experiences. From dynamic apps to smart AI, our solutions light the way for your business to stand out in this crowded market.",
     },
     {
       id: 2,
-      image: "public/images/bg2.png", // Replace with your own image
+      image: "/images/bg2.png", // Replace with your own image
       title: "From Bottlenecks to Breakthroughs",
       description:
       "We helped Styles overcome serious technical hurdles, re-engineering their platform into a fast, scalable SaaS solution that fueled 45% year-over-year growth. ", 
     },
     {
       id: 3,
-      image: "public/images/bg3.png", 
+      image: "/images/bg3.png", 
       title: "From Startup Struggles to Scalable Success",
       description:
         "We re-engineered a confidential UAE-based product, building a solid backend foundation that fueled growth to 150K customers and record-breaking sales.",

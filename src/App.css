@@ -13,7 +13,7 @@ html, body {
   font-family: 'Zain';
   font-style: normal;
   font-weight: normal;
-  src: url(../public/fonts/Zain-Regular.ttf) format('truetype');
+  src: url(../fonts/Zain-Regular.ttf) format('truetype');
 
 }
 .text{
